@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.proyectopoli"
+    namespace = "com.example.poliherramientas"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.proyectopoli"
+        applicationId = "com.example.poliherramientas"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -20,7 +20,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {

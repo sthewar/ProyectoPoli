@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ProyectoPoli"
+rootProject.name = "PoliHerramientas"
 include(":app")
+ 
