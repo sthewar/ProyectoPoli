@@ -44,11 +44,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_activity_main" />
 
+
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="309dp"
         android:layout_height="53dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +61,7 @@
         android:id="@+id/editTextTime"
         android:layout_width="309dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,12 +69,11 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextText"
         tools:text="Fecha nacimiento" />
 
-
     <Spinner
         android:id="@+id/spinnerHourRange"
         android:layout_width="309dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:entries="@array/hour_ranges"
         android:inputType="time"
@@ -92,5 +92,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerHourRange"
         app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de nacimiento"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora de nacimiento"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerHourRange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+        app:layout_constraintVertical_bias="0.444" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
