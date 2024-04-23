@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">PoliHerramientas</string>
-    <string name="title_home">Home</string>
-    <string name="lorem_ipsum_text">Lorem ipsum dolor sit amet, %1$s consectetur adipiscing elit.</string>
-</resources>
